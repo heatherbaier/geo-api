@@ -75,7 +75,7 @@ def lambda_handler(event, context):
     # query_filter = event.get('queryStringParameters', {}).get('filter', '')
     
     # Construct the SQL query
-    query = f"SELECT * FROM {iso} LIMIT 100"
+    query = f"SELECT * FROM {iso} LIMIT 5"
     
     
     
@@ -105,7 +105,13 @@ def lambda_handler(event, context):
     #     'body': f'Hello, this is a simple message from Lambda! {str(columns)}'
     # }
     
-
+    
+    # Create a message to include in the CSV
+    message = f"Message: Request worked successfully for ISO: {iso}\n\n"
+    
+    # Combine the message with the CSV content
+    csv_with_message = message + csv_content
+    
     # Return the CSV content as a response
     return {
         'statusCode': 200,
@@ -113,6 +119,17 @@ def lambda_handler(event, context):
             'Content-Type': 'text/csv',
             'Content-Disposition': 'attachment;filename=output.csv'
         },
-        'body': csv_content
-        # 'body': f"Worked! {iso}"
+        'body': csv_with_message
     }
+        
+
+    # # Return the CSV content as a response
+    # return {
+    #     'statusCode': 200,
+    #     'headers': {
+    #         'Content-Type': 'text/csv',
+    #         'Content-Disposition': 'attachment;filename=output.csv'
+    #     },
+    #     'body': csv_content
+    #     # 'body': f"Worked! {iso}"
+    # }
