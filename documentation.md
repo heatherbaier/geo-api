@@ -13,7 +13,7 @@ https://b1godeo6y4.execute-api.us-east-1.amazonaws.com/dev/query
 
 - **GET**: Retrieve data based on query parameters.
 
-## Query Parameters
+## Implemented Query Parameters
 
 ### `iso`
 - **Type**: `string` or `list`
@@ -21,6 +21,9 @@ https://b1godeo6y4.execute-api.us-east-1.amazonaws.com/dev/query
 - **Example**:
   - Single ISO: `iso=usa`
   - Multiple ISOs: `iso=usa,can,mex`
+
+
+## Not yet implemented Query Parameters
 
 ### `data`
 - **Type**: `string` or `list`
@@ -36,11 +39,18 @@ https://b1godeo6y4.execute-api.us-east-1.amazonaws.com/dev/query
   - Single Year: `year=2020`
   - Multiple Years: `year=2018,2019,2020`
 
+### `format`
+- **Type**: `string` or `list`
+- **Description**: The putput file format in which you'd like your data. Can be one of csv or shp
+- **Example**:
+  - Single Year: `format=csv`
+
 ## Example Request
 
 To query data for the United States and Canada, for the population data type, across the years 2019 and 2020, your request might look like this:
 
 
+https://b1godeo6y4.execute-api.us-east-1.amazonaws.com/dev/query?iso=bhr
 
 
 ## Response Format
