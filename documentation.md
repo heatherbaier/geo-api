@@ -50,7 +50,7 @@ https://elzapqbt1h.execute-api.us-east-1.amazonaws.com/dev/query
 To query data for the United States and Canada, for the population data type, across the years 2019 and 2020, your request might look like this:
 
 
-https://b1godeo6y4.execute-api.us-east-1.amazonaws.com/dev/query?iso=bhr
+https://elzapqbt1h.execute-api.us-east-1.amazonaws.com/dev/query?iso=tan&data=personnel,resources
 
 
 ## Response Format
