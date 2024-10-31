@@ -29,21 +29,21 @@ https://b1godeo6y4.execute-api.us-east-1.amazonaws.com/dev/query
 - **Type**: `string` or `list`
 - **Description**: The specific data type(s) or categories you wish to query. This could represent different datasets or indicators.
 - **Example**:
-  - Single Data Type: `data=population`
-  - Multiple Data Types: `data=population,gdp,inflation`
+  - Single Data Type: `data=personnel`
+  - Multiple Data Types: `data=personnel,resources`
 
-### `year`
+<!-- ### `year`
 - **Type**: `string` or `list`
 - **Description**: The year(s) for which you want to retrieve data. Accepts a single year or a comma-separated list of years.
 - **Example**:
   - Single Year: `year=2020`
-  - Multiple Years: `year=2018,2019,2020`
+  - Multiple Years: `year=2018,2019,2020` -->
 
-### `format`
+<!-- ### `format`
 - **Type**: `string` or `list`
 - **Description**: The putput file format in which you'd like your data. Can be one of csv or shp
 - **Example**:
-  - Single Year: `format=csv`
+  - Single Year: `format=csv` -->
 
 ## Example Request
 
