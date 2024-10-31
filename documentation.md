@@ -6,7 +6,7 @@ This API allows users to query data based on specific parameters such as `iso`, 
 
 ## Base URL
 
-https://b1godeo6y4.execute-api.us-east-1.amazonaws.com/dev/query
+https://elzapqbt1h.execute-api.us-east-1.amazonaws.com/dev/query
 
 
 ## HTTP Method
